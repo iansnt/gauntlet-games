@@ -22,11 +22,11 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (Input.GetKeyDown("up") && col.IsTouchingLayers())
             rb.AddForce(Vector2.up * jump);
-        if (Input.GetKey("down") && col.IsTouchingLayers(1))
+        if (Input.GetKey("down") && col.IsTouchingLayers(8192))
             transform.Translate(Vector2.down * Time.deltaTime * movespeed);
-        if (Input.GetKey("left") && col.IsTouchingLayers(1))
+        if (Input.GetKey("left") && col.IsTouchingLayers(8192))
             transform.Translate(Vector2.left * Time.deltaTime * movespeed);
-        if (Input.GetKey("right")&& col.IsTouchingLayers(1))
+        if (Input.GetKey("right")&& col.IsTouchingLayers(8192))
             transform.Translate(Vector2.right * Time.deltaTime * movespeed);
     }
 }
