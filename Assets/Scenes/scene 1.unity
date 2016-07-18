@@ -128,8 +128,8 @@ EdgeCollider2D:
   - {x: 0.48299527, y: 0.21165252}
   - {x: 0.5105028, y: -0.014524937}
   - {x: 0.189224, y: -0.104536176}
-  - {x: 0.49801826, y: -0.61204123}
-  - {x: -0.6097717, y: -0.59989643}
+  - {x: 0.42672968, y: -0.6039151}
+  - {x: -0.6817999, y: -0.60543716}
 --- !u!50 &732259906
 Rigidbody2D:
   serializedVersion: 2
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732259904}
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
@@ -201,7 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488eb5d15f2b7df438a31ee64add51e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 10
+  movespeed: 100
+  jump: 200
+  other: {fileID: 1314700066}
 --- !u!1 &1084011559
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +359,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1314700066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -0.38, z: 0}
+  m_LocalPosition: {x: -2.63, y: -0.63, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
