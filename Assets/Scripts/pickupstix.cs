@@ -3,8 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class pickupstix : MonoBehaviour {
-    public Text test;
-    int count;
+
 
 	// Use this for initialization
 	void Start () {
@@ -21,8 +20,6 @@ public class pickupstix : MonoBehaviour {
         if (other.gameObject.CompareTag("Coin"))
         {
             other.gameObject.SetActive(false);
-            count++;
-            test.text = count.ToString();
         }
     }
 }
