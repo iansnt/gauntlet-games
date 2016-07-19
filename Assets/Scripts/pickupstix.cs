@@ -7,7 +7,7 @@ public class pickupstix : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        
 	}
 	
 	// Update is called once per frame
@@ -22,4 +22,5 @@ public class pickupstix : MonoBehaviour {
             other.gameObject.SetActive(false);
         }
     }
+
 }

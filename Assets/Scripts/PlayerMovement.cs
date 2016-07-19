@@ -29,4 +29,16 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("right"))
             transform.Translate(Vector2.right * Time.deltaTime * movespeed);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            if (other.transform.position.y < rb.position.y - 1)
+            {
+                rb.AddForce(Vector2.up * jump);
+                other.gameObject.SetActive(false);
+            }
+        }
+    }
 }
