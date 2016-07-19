@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 5
-  jump: 200
+  jump: 700
   other: {fileID: 1314700066}
 --- !u!1 &864131580
 GameObject:
@@ -587,7 +587,7 @@ GameObject:
   - 4: {fileID: 1314700069}
   - 212: {fileID: 1314700068}
   - 61: {fileID: 1314700067}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: colors
   m_TagString: Untagged
   m_Icon: {fileID: 0}

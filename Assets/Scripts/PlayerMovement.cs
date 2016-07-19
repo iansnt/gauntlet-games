@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        if (Input.GetKeyDown("up") && col.IsTouchingLayers())
+        if (Input.GetKeyDown("up") && col.IsTouchingLayers(8192))
             rb.AddForce(Vector2.up * jump);
         if (Input.GetKey("down") && col.IsTouchingLayers(8192))
             transform.Translate(Vector2.down * Time.deltaTime * movespeed);
-        if (Input.GetKey("left") && col.IsTouchingLayers(8192))
+        if (Input.GetKey("left"))
             transform.Translate(Vector2.left * Time.deltaTime * movespeed);
-        if (Input.GetKey("right")&& col.IsTouchingLayers(8192))
+        if (Input.GetKey("right"))
             transform.Translate(Vector2.right * Time.deltaTime * movespeed);
     }
 }
